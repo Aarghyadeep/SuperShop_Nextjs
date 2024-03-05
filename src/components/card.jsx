@@ -9,6 +9,8 @@ export default function Card({ product }) {
       initial={{ opacity: 0 }}
       exit={{opacity: 0 }}
       layout 
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.5 }}
       className="group relative block overflow-hidden
       hover:shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)]">
   <button
