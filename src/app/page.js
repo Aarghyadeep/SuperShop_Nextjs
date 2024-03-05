@@ -19,7 +19,7 @@ export default function Home() {
         {products.filter((product)=> 
          { return prompt.toLowerCase() === ""
           ? product
-          : product.title.toLowerCase().includes(prompt);}
+          : product.title.toLowerCase().includes(prompt.toLowerCase());}
         ).map((product, idx)=> (
          <Card key={idx} product={product} />
         ))}
